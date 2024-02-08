@@ -1,41 +1,16 @@
-{
-	"name": "mycustomwidget",
-	"description": "Hello World",
-	"newInstancePrefix": "mycustomwidget",
-	"eula": "",
-	"vendor": "sunilrajput141",
-	"license": "",
-	"id": "mycustomwidget",
-	"version": "1.0.1",
-	"icon": "",
-	"webcomponents": [
-		{
-			"kind": "main",
-			"tag": "custom-button",
-			"url": "https://sunilrajput141.github.io/Webcomponent.js",
-			"integrity": ""	,
-			"ignoreIntegrity": true
-			
-		}		
-	],
-	"properties": {
-		"width": {
-			"type": "integer",
-			"default": 192
-		},
-		"height": {
-			"type": "integer",
-			"default": 32
-		}
-	},
-	"methods": {
-		"clear": {
-			"description": "Clear the resultset"
-		}
-	},
-	"events": {
-		"onClick": {
-			"description": "Called when the user clicks the button."
-		}
-	}
-}
+(function () {
+    class ExternalScript extends HTMLElement {
+        constructor() {
+            super();            
+        }
+
+        connectedCallback() {
+                var script = document.createElement('script');
+                script.defer = 1;
+                script.src = 'https://sunilrajput141.github.io/Webcomponent.js';
+                document.getElementsByTagName('head')[0].appendChild(script);
+            }
+        }     
+    
+    customElements.define("script-element", ExternalScript);
+})();
