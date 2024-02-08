@@ -1,0 +1,207 @@
+{
+    "id": "com.biexcellence.openbi.sap.sac.exportclient",
+    "version": "0.0.2",
+    "name": "biExportClient",
+    "description": "biExportClient for exporting on the client",
+    "newInstancePrefix": "biExportClient",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAABegAAAXoBMrnI/AAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJGSURBVDiNlZNPSNNxGMY/399+++OWuKaJQ0MtBItBhYwEEexQhNglECLq0EU9mZ06Ti8dIujQITqEBy+B1wjrkFEQBWqUaC3NBUtLs7ma+/v783YQl3MW9MD38uV5PvA+Ly8iwt/e8Jvj/uHJLv1fHiUi7NTIfMhF1hoUuA7UAIgtQ1o4eieC2OxSCWBkPrSPnDUjQstuI6hH6uH7c5FIKUQrhsdDLnLmp73DANItPa1ju3+LADlk3xZRtXuHi7o4Mn3kTNkIg4st7sBPPVdmt7Wn8c/dE3a+qlfTkh8DwVdL3sofffXKd7CvbcoA0AGqk84WUaVlGob7QezDpbDfp92s8gsOpcKpRJjkerzf0Tx7ARj7M4JXW98ZLuR9d+fnLp91u7TDfp/QUKM4VOek2qfjMCvvff1S4yjt4OjcmhJiAAoVn5o534mFXwMcCjy64HFChbsCpYR0siFy690xXxEQQey8wzyJKHPmbdt9KIQsFAVT2MzCSkIRWy0Q9DZxwBdkv9ffNPHC4ynZwo0TC98XYgPtqZRnwJY0hpkiYxgkMibLGxmWN35RsDUEjcbqZnTcjcUSt7Xy7fQVHF2WLY/HDSvemc276iwLMpoBKs3i2hIBXxXR1XnyhmOpDCDQhjjrhZ5eCzNhW6+fmXY0q6uNAKRbp+MrVbZkcpYEr04OTSbLAEAMaN8qUw/YdHQVpIPC1oY3ESMqyjma9mRGtwMlADOr9esemQU5hVK1ILYgawrmNOF5zgo8eXmtIbszU3aN/6vfbVAouCAyeN4AAAAASUVORK5CYII=",
+    "vendor": "bi excellence software GmbH",
+    "eula": "",
+    "license": "",
+    "webcomponents": [
+      {
+        "kind": "main",
+        "tag": "com-biexcellence-openbi-sap-sac-exportclient",
+        "url": "https://biexcellence.github.io/biexport-sac/biexportclient.js",
+        "integrity": "",
+        "ignoreIntegrity": true
+      }
+    ],
+    "properties": {
+      "recordDelimiter": {
+        "type": "string",
+        "description": "Record delimiter.",
+        "default": "\n"
+      },
+      "fieldDelimiter": {
+        "type": "string",
+        "description": "Field delimiter.",
+        "default": "\t"
+      },
+      "includeHeader": {
+        "type": "boolean",
+        "description": "Include header.",
+        "default": true
+      },
+      "dataFormat": {
+        "type": "string",
+        "description": "Data format.",
+        "default": "raw"
+      },
+      "exportMode": {
+        "type": "string",
+        "description": "Export mode.",
+        "default": "CLIPBOARD"
+      }
+    },
+    "dataBindings": {
+      "exportDataSource": {
+        "feeds": [
+          {
+            "id": "dimensions",
+            "description": "The dimensions feed",
+            "type": "dimension"
+          },
+          {
+            "id": "measures",
+            "description": "The measures feed",
+            "type": "mainStructureMember"
+          }
+        ]
+      }
+    },
+    "methods": {
+      "getRecordDelimiter": {
+        "returnType": "string",
+        "description": "Get the record delimiter.",
+        "parameters": []
+      },
+      "setRecordDelimiter": {
+        "description": "Set the record delimiter.",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "string",
+            "description": "The new record delimiter."
+          }
+        ]
+      },
+      "getFieldDelimiter": {
+        "returnType": "string",
+        "description": "Get the field delimiter.",
+        "parameters": []
+      },
+      "setFieldDelimiter": {
+        "description": "Set the field delimiter.",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "string",
+            "description": "The new field delimiter."
+          }
+        ]
+      },
+      "getIncludeHeader": {
+        "returnType": "boolean",
+        "description": "Get the include header.",
+        "parameters": []
+      },
+      "setIncludeHeader": {
+        "description": "Set the include header.",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "boolean",
+            "description": "The new include header."
+          }
+        ]
+      },
+      "getDataFormat": {
+        "returnType": "string",
+        "description": "Get the data format: \"raw\", \"formatted\".",
+        "parameters": []
+      },
+      "setDataFormat": {
+        "description": "Set the data format.",
+        "parameters": [
+          {
+            "name": "value",
+            "type": "string",
+            "description": "The new data format: \"raw\", \"formatted\"."
+          }
+        ]
+      },
+      "getDataSource": {
+        "description": "Get the datasource.",
+        "parameters": [],
+        "returnType": "DataSource"
+      },
+      "setModel": {
+        "description": "Set the model.",
+        "parameters": [
+          {
+            "name": "modelId",
+            "type": "string",
+            "description": "The model id."
+          }
+        ]
+      },		
+      "openSelectModelDialog": {
+        "description": "Open select model dialog.",
+        "parameters": []
+      },
+      "addDimension": {
+        "description": "Add dimension.",
+        "parameters": [
+          {
+            "name": "dimensionId",
+            "type": "string",
+            "description": "The dimension id."
+          }
+        ]
+      },
+      "addMeasure": {
+        "description": "Add measure.",
+        "parameters": [
+          {
+            "name": "measureId",
+            "type": "string",
+            "description": "The measure id."
+          }
+        ]
+      },
+      "removeDimension": {
+        "description": "Remove dimension.",
+        "parameters": [
+          {
+            "name": "dimensionId",
+            "type": "string",
+            "description": "The dimension id."
+          }
+        ]
+      },
+      "removeMeasure": {
+        "description": "Remove measure.",
+        "parameters": [
+          {
+            "name": "measureId",
+            "type": "string",
+            "description": "The measure id."
+          }
+        ]
+      },
+      "getDimensions": {
+        "description": "Get dimensions.",
+        "parameters": [],
+        "returnType": "string[]"
+      },
+      "getMeasures": {
+        "description": "Get measures.",
+        "parameters": [],
+        "returnType": "string[]"
+      },
+      "doExport": {
+        "description": "Triggers the export process.",
+        "parameters": [
+          {
+            "name": "mode",
+            "type": "string",
+            "description": "The export mode: \"CLIPBOARD\", \"FILE\"."
+          }
+        ]
+      }
+    },
+    "events": {
+    }
+  }
+  
