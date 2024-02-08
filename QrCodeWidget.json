@@ -1,0 +1,120 @@
+{
+    "id": "com.rohitchouhan.sap.qrcodewidget",
+    "version": "1.0.0",
+    "name": "Qr Code Widget",
+    "description": "SAP Custom widget to generate and display QR Code dynamically, with colors.",
+    "newInstancePrefix": "QrCodeWidget",
+    "vendor": "Rohit Chouhan",
+    "eula": "",
+    "license": "MIT",
+    "icon": "https:\/\/raw.githubusercontent.com\/SAP-Custom-Widget\/QrCodeWidget\/main\/icon.png",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "com-rohitchouhan-sap-qrcodewidget",
+            "url": "https:\/\/cdn.jsdelivr.net\/gh\/SAP-Custom-Widget\/QrCodeWidget@1.0.0\/QrCodeWidget.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        },
+        {
+            "kind": "builder",
+            "tag": "com-rohitchouhan-sap-qrcodewidget-builder",
+            "url": "https:\/\/cdn.jsdelivr.net\/gh\/SAP-Custom-Widget\/QrCodeWidget@1.0.0\/QrCodeWidget_Builder.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "size": {
+            "description": "QR Code Width x Height",
+            "type": "integer",
+            "default": 150
+        },
+        "data": {
+            "description": "Data for QR Code",
+            "type": "string",
+            "default": "http:\/\/rohitchouhan.com"
+        },
+        "color": {
+            "description": "QR Code Foreground Color",
+            "type": "string",
+            "default": "000"
+        },
+        "bgcolor": {
+            "description": "QR Code Background Color",
+            "type": "string",
+            "default": "fff"
+        }
+    },
+    "methods": {
+        "setSize": {
+            "description": "Set QR Code Width x Height",
+            "parameters": [
+                {
+                    "name": "size",
+                    "type": "integer",
+                    "description": "height and width size"
+                }
+            ],
+            "body": "this.size = size;"
+        },
+        "getSize": {
+            "returnType": "integer",
+            "description": "Return QR Code Width x Height",
+            "body": "return this.size;"
+        },
+        "setData": {
+            "description": "Set Data for QR Code",
+            "parameters": [
+                {
+                    "name": "data",
+                    "type": "string",
+                    "description": "url, text anything"
+                }
+            ],
+            "body": "this.data = data;"
+        },
+        "getData": {
+            "returnType": "string",
+            "description": "Return Data for QR Code",
+            "body": "return this.data;"
+        },
+        "setColor": {
+            "description": "Set QR Code Foreground Color",
+            "parameters": [
+                {
+                    "name": "color",
+                    "type": "string",
+                    "description": "hex color code, without #"
+                }
+            ],
+            "body": "this.color = color;"
+        },
+        "getColor": {
+            "returnType": "string",
+            "description": "Return QR Code Foreground Color",
+            "body": "return this.color;"
+        },
+        "setBgcolor": {
+            "description": "Set QR Code Background Color",
+            "parameters": [
+                {
+                    "name": "bgcolor",
+                    "type": "string",
+                    "description": "hex color code, without #"
+                }
+            ],
+            "body": "this.bgcolor = bgcolor;"
+        },
+        "getBgcolor": {
+            "returnType": "string",
+            "description": "Return QR Code Background Color",
+            "body": "return this.bgcolor;"
+        }
+    },
+    "events": {
+        "onClick": {
+            "description": "User Clicked."
+        }
+    }
+}
