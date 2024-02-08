@@ -1,7 +1,7 @@
 {
-	"name": "mycustomwidget",
+	"name": "myfirstwidget",
 	"description": "Hello World",
-	"newInstancePrefix": "mycustomwidget",
+	"newInstancePrefix": "myfirstwidget",
 	"eula": "",
 	"vendor": "sunilrajput141",
 	"license": "",
@@ -21,11 +21,11 @@
 	"properties": {
 		"width": {
 			"type": "integer",
-			"default": 192
+			"default": 392
 		},
 		"height": {
 			"type": "integer",
-			"default": 32
+			"default": 232
 		}
 	},
 	"methods": {
