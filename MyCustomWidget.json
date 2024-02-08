@@ -1,16 +1,19 @@
-(function () {
-    class ExternalScript extends HTMLElement {
-        constructor() {
-            super();            
+{
+    "id": "script",
+    "version": "1.0",
+    "name": "External Script",
+    "newInstancePrefix": "external_script",
+    "icon": "",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "script-element",
+            "url": "https://sunilrajput141.github.io/Webcomponent.js",
+            "integrity": "",
+            "ignoreIntegrity": true
         }
-
-        connectedCallback() {
-                var script = document.createElement('script');
-                script.defer = 1;
-                script.src = 'https://sunilrajput141.github.io/Webcomponent.js';
-                document.getElementsByTagName('head')[0].appendChild(script);
-            }
-        }     
-    
-    customElements.define("script-element", ExternalScript);
-})();
+    ],
+    "properties": {},
+    "methods": {},
+    "events": {}
+}
