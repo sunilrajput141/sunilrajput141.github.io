@@ -12,21 +12,21 @@
  {
  "kind": "main",
 "tag": "com-sap-sample-coloredbox",
- "url": "https://github.airbus.corp/pages/Airbus/Test_CutomWidget_SP000DCF/test1.js",
+ "url": "https://github.airbus.corp/pages/Airbus/Test_CutomWidget_SP000DCF/ColoredBox.js",
  "integrity": "",
  "ignoreIntegrity": true
  },
  {
  "kind": "styling",
  "tag": "com-sap-sample-coloredbox-styling",
- "url": "https://github.airbus.corp/pages/Airbus/Test_CutomWidget_SP000DCF/test1_styling.js",
+ "url": "https://github.airbus.corp/pages/Airbus/Test_CutomWidget_SP000DCF/ColoredBox_styling.js",
  "integrity": "",
  "ignoreIntegrity": true
  },
  {
  "kind": "builder",
  "tag": "com-sap-sample-coloredbox-builder",
- "url": "https://github.airbus.corp/pages/Airbus/Test_CutomWidget_SP000DCF/test1_builder.js",
+ "url": "https://github.airbus.corp/pages/Airbus/Test_CutomWidget_SP000DCF/ColoredBox_builder.js",
  "integrity": "",
  "ignoreIntegrity": true
  }
