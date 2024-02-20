@@ -4,7 +4,7 @@
  "name": "Colored Box",
  "description": "A colored box",
  "newInstancePrefix": "ColoredBox",
- "icon": "https://www.sample.com/customwidgets/coloredbox/icon.png",
+ "icon": "",
  "vendor": "SAP",
  "eula": "",
  "license": "",
@@ -12,24 +12,21 @@
  {
  "kind": "main",
 "tag": "com-sap-sample-coloredbox",
- "url": "https://www.sample.com/customwidgets/coloredbox/
-coloredbox.js",
+ "url": "https://github.airbus.corp/pages/Airbus/Test_CutomWidget_SP000DCF/test1.js",
  "integrity": "",
  "ignoreIntegrity": true
  },
  {
  "kind": "styling",
  "tag": "com-sap-sample-coloredbox-styling",
- "url": "https://www.sample.com/customwidgets/coloredbox/
-coloredbox_styling.js",
+ "url": "https://github.airbus.corp/pages/Airbus/Test_CutomWidget_SP000DCF/test1_styling.js",
  "integrity": "",
  "ignoreIntegrity": true
  },
  {
  "kind": "builder",
  "tag": "com-sap-sample-coloredbox-builder",
- "url": "https://www.sample.com/customwidgets/coloredbox/
-coloredbox_builder.js",
+ "url": "https://github.airbus.corp/pages/Airbus/Test_CutomWidget_SP000DCF/test1_builder.js",
  "integrity": "",
  "ignoreIntegrity": true
  }
