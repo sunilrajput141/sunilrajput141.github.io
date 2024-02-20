@@ -1,18 +1,18 @@
 {
-	"name": "mycustomwidget",
+	"name": "Newcustomwidget1",
 	"description": "Hello World",
-	"newInstancePrefix": "mycustomwidget",
+	"newInstancePrefix": "Newcustomwidget1",
 	"eula": "",
-	"vendor": "PranavKandpal",
+	"vendor": "SP000DCF",
 	"license": "",
-	"id": "mycustomwidget",
+	"id": "Newcustomwidget1",
 	"version": "1.0.1",
 	"icon": "",
 	"webcomponents": [
 		{
 			"kind": "main",
 			"tag": "custom-button",
-			"url": "https://kandpalpranav.github.io/CustomWidget/Webcomponent.js",
+			"url": "https://github.airbus.corp/pages/Airbus/Test_CutomWidget_SP000DCF/Webcomponent.js",
 			"integrity": ""	,
 			"ignoreIntegrity": true
 			
